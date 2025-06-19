@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Все покупки</h1>
+    {% for purchase in purchases %}
+    <a href="/products/{{loop.index-1}}">{{ purchase.name }}</a><br>
+    {% endfor %}
+</body>
+</html>
