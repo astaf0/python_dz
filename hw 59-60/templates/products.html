@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Покупки</title>
+</head>
+<body>
+    <h1>Все покупки</h1>
+    {% for purchase in purchases %}
+    <a href="/products/{{ loop.index-1 }}">{{ purchase.name }}</a>
+    <form action="/products/{{ loop.index-1 }}_delete" method="post" style="display: inline">
+        <button style="margin: 5px">Удалить</button>
+    </form><br>
+    {% endfor %}
+
+    <h3>Добавить покупку</h3>
+    <form action="/products/add" method="post"  style="border: 1px solid gray; border-radius: 3pt; padding: 10px; width: max-content">
+        <label>Название:</label>
+        <input type="text" name="name"><br>
+        <label>Цена:</label>
+        <input type="text" name="cost"><br>
+        <label>Дата добавления:</label>
+        <input type="text" name="date"><br>
+        <button type="submit">Добавить</button>
+    </form>
+</body>
+</html>
