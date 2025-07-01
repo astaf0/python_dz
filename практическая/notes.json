@@ -1,0 +1,22 @@
+[
+    {
+        "views": 20,
+        "title": "новая заметка",
+        "text": "апваивмвавам"
+    },
+    {
+        "views": 39,
+        "title": "самая просматриваемая заметка",
+        "text": "самая просматриваемая заметка"
+    },
+    {
+        "views": 14,
+        "title": "самая длинная заметка",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda enim exercitationem facere impedit praesentium sint. Deleniti dicta ea optio quibusdam recusandae? Assumenda eius excepturi, exercitationem natus non perspiciatis qui quibusdam saepe. Accusantium atque corporis, nobis numquam obcaecati reprehenderit rerum ut. Blanditiis placeat tempore totam. Adipisci architecto, autem beatae consequuntur cumque debitis dicta dignissimos distinctio dolorem dolores error esse ex inventore ipsam ipsum iste laborum magnam maiores mollitia, non nulla obcaecati officia placeat porro quibusdam, quis quod reprehenderit rerum sapiente tenetur ut vel vitae voluptatem. Consectetur consequuntur cumque dolores fugiat illo laboriosam laborum libero maiores, necessitatibus, omnis optio quod reprehenderit."
+    },
+    {
+        "views": 6,
+        "title": "4ая заметка",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet asperiores commodi deserunt earum incidunt molestiae perferendis, quas quo! Consectetur delectus dignissimos dolorem ipsum itaque nam qui ratione similique, voluptatibus?"
+    }
+]

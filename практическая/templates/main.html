@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Заметки</title>
+  <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+  <div class="container">
+
+    <a href="/top-3"><h3>Топ 3 просматриваемых заметок</h3></a><br>
+    <h1>Список заметок</h1>
+
+    <form method="post" action="/add-note">
+      <input type="text" name="title" placeholder="Заголовок" required />
+      <textarea name="text" rows="4" placeholder="Текст заметки" required></textarea>
+      <button type="submit">Добавить</button>
+    </form>
+
+    {% for note in notes %}
+
+    <div class="note">
+      <a href="/{{note.title}}"><h2>{{ note.title }}</h2></a>
+      <p>{{ note.text[:30] }}...</p>
+    </div>
+
+    {% endfor %}
+    <!-- Другие заметки -->
+  </div>
+</body>
+</html>
