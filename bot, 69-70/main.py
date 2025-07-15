@@ -19,7 +19,7 @@ def language_buttons():
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.send_message(message.chat.id, 'Привет! Я могу перевести фразу на любой язык. Выбери язык', reply_markup=language_buttons())
+    bot.send_message(message.chat.id, 'Привет! Я могу переводить текст на иностранные языки. Выбери язык', reply_markup=language_buttons())
 
 
 @bot.callback_query_handler(func=lambda callback: callback.data == 'английский')
