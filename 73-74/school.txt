@@ -1,0 +1,43 @@
+1
+select * from student
+
+
+2
+select * from subject
+
+
+3
+select * from grade
+
+
+4
+select name, age from student
+
+
+5
+select * from grade where student_id = 1
+
+
+6 
+select * from student where class = '10A'
+
+
+7
+select name from student join grade
+on student.student_id = grade.student_id
+where grade = 5
+
+
+8
+select name, subject_name, grade from grade join subject
+on grade.subject_id = subject.subject_id
+join student 
+on grade.student_id = student.student_id
+
+
+9
+select name, grade from grade join student
+on grade.student_id = student.student_id
+join subject
+on grade.subject_id = subject.subject_id
+where subject_name = 'Математика'
